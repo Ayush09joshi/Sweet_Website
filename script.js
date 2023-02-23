@@ -1,14 +1,18 @@
 // Sliding navbar for the mobile view.
+
 const bar = document.getElementById('bar');
 const close = document.getElementById('close');
 const nav = document.getElementById('navbar');
+
 if (bar) {
-    bar.addEventListener('cick', () => {
+    bar.addEventListener('click', () => {
         nav.classList.add('active');
+        console.log('hhhh');
     })
 }
+
 if (close) {
-    close.addEventListener('cick', () => {
+    close.addEventListener('click', () => {
         nav.classList.remove('active');
     })
 }
