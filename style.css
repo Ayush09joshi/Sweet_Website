@@ -46,6 +46,11 @@ body {
 }
 
 
+
+/* H O M E        P A G E  */
+
+
+
 /* HeaderStart */
 
 #header {
@@ -114,7 +119,6 @@ body {
 }
 
 
-/* HomePage */
 
 /* !!HERO!! */
 #hero {
@@ -338,6 +342,8 @@ body {
     background-color: #088178;
     color: #fff;
     white-space: nowrap;
+    padding: 16px;
+    margin: 0 21px;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
 }
@@ -411,6 +417,157 @@ footer .copyright {
     width: 100%;
     text-align: center;
 }
+
+
+
+
+
+
+
+
+/* S H O P    P A G E */
+
+
+#page-header {
+    background-image: url("img/banner/b1.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+
+#page-header h2,
+#page-header p {
+    color: #fff;
+}
+
+#pagination {
+    text-align: center;
+
+}
+
+#pagination a {
+    text-decoration: none;
+    background-color: #088178;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+/* P R O D U C T     P A G E  */
+
+#prodetails {
+    display: flex;
+    margin-top: 20px;
+}
+
+#prodetails .spi {
+    width: 40%;
+    margin-right: 50px;
+}
+
+.sig {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sic {
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+#prodetails .spd {
+    width: 50%;
+    padding-top: 30px;
+}
+
+#prodetails .spd h4 {
+    padding: 40px 0 20px 0;
+}
+
+#prodetails .spd h2 {
+    font-size: 26px;
+    ;
+}
+
+#prodetails .spd select {
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* C O N T A C T              P A G E */
+
+#contact-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#contact-details .details {
+     width: 40%;
+}
+
+#contact-details .details span {
+    font-size: 12px;
+}
+
+#contact-details .details h2 {
+    font-size: 26px;
+    line-height: 35px;
+    padding: 20px 0;
+}
+
+#contact-details .details h3 {
+    font-size: 16px;
+    padding-bottom: 15px;
+}
+
+#contact-details .details li {
+    list-style: none;
+    display: flex;
+    padding: 10px 0;
+}
+
+
+#contact-details .details li i {
+    font-size: 14px;
+    padding-right: 22px;
+}
+
+#contact-details .details li p {
+    margin: 0;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -500,9 +657,9 @@ footer .copyright {
 
 @media (max-width: 477px) {
 
-.section-p1 {
-    padding: 20px;
-}
+    .section-p1 {
+        padding: 20px;
+    }
 
     #header {
         padding: 10px 30px;
@@ -522,7 +679,7 @@ footer .copyright {
     }
 
     #feature {
-            justify-content: space-between;
+        justify-content: space-between;
     }
 
     #feature .fe-box {
