@@ -1,0 +1,33 @@
+<%- include('partials/header.ejs') %>
+
+
+    <!-- ProductSection -->
+    <section id="product1" class="section-p1">
+        <!-- <h2>Best Sellers</h2>
+        <p>Check out ours best of the bests products</p> -->
+       
+            <% for(var i=0; i<products.length; i++) { %>
+                <div class="pro-container">
+                    <div class="pro">
+                        <img src="products/<%=products[i].img_name %>.jpg" alt="">
+                        <div class="des">
+                            <h5><%= products[i].name %></h5>
+                            <h4><%= products[i].price %></h4>
+                        </div>
+                        <a href="#"> <i class="fal fa-shopping-cart cart"></i></a>
+                    </div>
+             <% } %>
+        </div>
+    </section>
+
+
+
+    <!-- Pagination -->
+
+    <section id="pagination" class="section-p1">
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+    </section>
+
+    <%- include('partials/footer.ejs') %>
